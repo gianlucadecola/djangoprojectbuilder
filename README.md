@@ -1,4 +1,4 @@
-# djangoprojectbuilder  
+# Django Project Builder  
 
 This repository contains an up and running clean django environment for development.  
 You can clone it and start building your django app.
