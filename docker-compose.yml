@@ -2,7 +2,7 @@ version: '3'
 
 services:
   web:
-    image: django-project:latest
+    build: ./src
     command: bash -c "cd /src && python manage.py runserver 0.0.0.0:8000"
     container_name: django-project
     ports:
