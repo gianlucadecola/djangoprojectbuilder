@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  web:
+    image: django-project:latest
+    command: bash -c "
+        yes | python3.8 manage.py makemigrations
+        && yes | python3.8 manage.py migrate
+        && python3.8 manage.py runserver"
+    container_name: django-project
+    volumes:
+        - ./src:/src
+    ports:
+        - "8000:8000"
+
