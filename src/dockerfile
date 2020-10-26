@@ -3,8 +3,7 @@ FROM python:3.8
 COPY requirements.txt /tmp
 RUN python3.8 -m pip install -r /tmp/requirements.txt
 
-WORKDIR /src
+ENV PYTHONUNBUFFERED 1
+
 RUN django-admin startproject server
-RUN mv server _server
-RUN mv _server/* .
-RUN rm -r _server
+RUN mv server src
