@@ -3,8 +3,10 @@ version: '3'
 services:
   web:
     build: ./src
-    command: bash -c "cd /src && python manage.py runserver 0.0.0.0:8000"
+    command: python manage.py runserver 0.0.0.0:8000
     container_name: django-project
+    volumes:
+      - ./src:/src
     ports:
         - "8000:8000"
 
