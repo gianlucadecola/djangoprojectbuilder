@@ -6,7 +6,7 @@ You can clone it and start building your django app.
 ## Instructions  
 
 ```chmod +x build.sh```  
-```build.sh django-version-number djangorestframework-version-number drf-yasg-version-number```  
+```./build.sh django-version-number djangorestframework-version-number drf-yasg-version-number```  
 ```docker-compose up```
 
 ### Tested versions  
