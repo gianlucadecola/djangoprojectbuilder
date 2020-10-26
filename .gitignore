@@ -2,3 +2,4 @@
 db.sqlite3
 server/
 manage.py
+requirements.txt
