@@ -1,5 +1,8 @@
-echo django==$1 >> requirements.txt
-echo djangorestframework==$2 >> requirements.txt
-echo drf-yasg==$3 >> requirements.txt
+echo django==$1 > src/requirements.txt
+echo djangorestframework==$2 >> src/requirements.txt
+echo drf-yasg==$3 >> src/requirements.txt
 
-docker-compose -f docker-compose.local.yml up --build
+docker build -t django-project:latest src/
+docker create -ti --name dummy django-project:latest bash
+docker cp dummy:/src/* $(pwd)/src/
+docker rm -f dummy
