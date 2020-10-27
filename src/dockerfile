@@ -11,6 +11,10 @@ RUN django-admin startproject server
 RUN mv server src
 
 WORKDIR src
-RUN python manage.py startapp appname
+RUN python manage.py startapp ${appname}
 
+WORKDIR ${appname}
+RUN touch serializers.py
+RUN touch urls.py
 
+WORKDIR /src
