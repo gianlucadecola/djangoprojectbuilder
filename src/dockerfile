@@ -14,7 +14,10 @@ WORKDIR src
 RUN python manage.py startapp ${appname}
 
 WORKDIR ${appname}
-RUN touch serializers.py
-RUN touch urls.py
+RUN printf "from rest_framework import serializers" > serializers.py
+
+RUN printf "from django.urls import path\n\
+from drf_yasg.views import get_schema_view\n\
+from drf_yasg import openapi" > urls.py
 
 WORKDIR /src
