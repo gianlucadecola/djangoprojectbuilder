@@ -1,5 +1,7 @@
 FROM python:3.8
 
+ARG appname=app
+
 COPY requirements.txt /tmp
 RUN python3.8 -m pip install -r /tmp/requirements.txt
 
@@ -7,3 +9,16 @@ ENV PYTHONUNBUFFERED 1
 
 RUN django-admin startproject server
 RUN mv server src
+
+WORKDIR src
+RUN python manage.py startapp ${appname}
+
+WORKDIR ${appname}
+RUN printf "from rest_framework import serializers" > serializers.py
+
+RUN printf "from django.urls import path\n\
+from . import views\n\n\
+app_name = '${appname}'\n\n\
+urlpatterns = []" >  urls.py
+
+WORKDIR /src
