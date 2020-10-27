@@ -1,12 +1,14 @@
 # Django Project Builder  
 
-This repository contains an up and running clean django environment for development.  
+This repository contains an up and running clean django/django rest framework environment for development.  
 You can clone it and start building your django app.  
 
 ## Instructions  
 
 ```chmod +x build.sh```  
-```./build.sh django-version-number djangorestframework-version-number drf-yasg-version-number```  
+
+```./build.sh <django-version-number> <djangorestframework-version-number> <drf-yasg-version-number> <appname>```  
+
 ```docker-compose up```
 
 ### Tested versions  
