@@ -18,6 +18,12 @@ RUN printf "from rest_framework import serializers" > serializers.py
 
 RUN printf "from django.urls import path\n\
 from drf_yasg.views import get_schema_view\n\
-from drf_yasg import openapi" > urls.py
+from drf_yasg import openapi\n\n\
+from . import views\n\n\
+app_name = '${appname}'\n\n\
+schema_view = get_schema_view(openapi.Info(\n\
+    title='${appname} API',\n\
+    default_version='v1'))\n\n\
+urlpatterns = []"  > urls.py
 
 WORKDIR /src
