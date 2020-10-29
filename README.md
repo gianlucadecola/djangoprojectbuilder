@@ -11,6 +11,11 @@ You can clone it and start building your django app.
 
 ```docker-compose up```
 
+## Example Build  
+
+```./build.sh 3.0.6 3.11.0 1.17.1 app```
+
+
 ### Tested versions  
 django==3.0.6  
 djangorestframework==3.11.0  
