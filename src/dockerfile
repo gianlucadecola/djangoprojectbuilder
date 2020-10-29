@@ -22,3 +22,5 @@ app_name = '${appname}'\n\n\
 urlpatterns = []" >  urls.py
 
 WORKDIR /src
+
+sed "/django.contrib.staticfiles/ a \ \ \ \ '${appname}'," server/settings.py
