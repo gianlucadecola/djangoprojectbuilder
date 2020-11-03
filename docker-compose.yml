@@ -3,6 +3,7 @@ version: '3'
 services:
   web:
     build: ./src
+    image: django-project:latest
     command: python manage.py runserver 0.0.0.0:8000
     container_name: django-project
     volumes:
