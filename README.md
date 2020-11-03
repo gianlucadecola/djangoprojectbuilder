@@ -5,8 +5,8 @@ You can clone it, run the build and start building your django app.
 
 ## Project Structure (after the build)
 
-* ```src``` folder contains all the application (project root dir with ```manage.py``` file.  
-* ```src/server``` folder contains the django project with ```settings.py```.  
+* ```src``` folder contains the full django project.  
+* ```src/server``` folder contains the root django project with ```settings.py```.  
 * A default db.qlite3 is created with its basic migrations.  
 * Django admin need to be created manually.  
 
