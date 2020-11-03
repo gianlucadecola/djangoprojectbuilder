@@ -1,7 +1,6 @@
 # Django Skeleton Project Builder  
 
-This repository contains an up and running clean django/django rest framework environment with standard project structure.  
-You can clone it, run the build and start building your django app.  
+This repository contains an up and running clean django/django rest framework environment with standard project structure.   
 
 ## Project Structure (after the build)
 
