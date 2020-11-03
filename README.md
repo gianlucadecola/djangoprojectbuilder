@@ -3,7 +3,7 @@
 This repository contains an up and running clean django/django rest framework environment with standard project structure.  
 You can clone it, run the build and start building your django app.  
 
-## Project Structure  
+## Project Structure (after the build)
 
 * ```src``` folder contains all the application (project root dir with ```manage.py``` file.  
 * ```src/server``` folder contains the django project with ```settings.py```.  
