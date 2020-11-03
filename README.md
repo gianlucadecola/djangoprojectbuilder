@@ -9,8 +9,7 @@ You can clone it, run the build and start building your django app.
 * ```src/server``` folder contains the root django project with ```settings.py```.  
 * A default db.qlite3 is created with its basic migrations.  
 * Django admin need to be created manually.  
-
-**API documentation** can be found at the url: ```host:8000/swagger```
+* API documentation can be found at the url: ```host:8000/swagger```
 
 ## Instructions  
 
