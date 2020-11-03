@@ -26,7 +26,7 @@ Django admin need to be created manually.
 ```./build.sh 3.0.6 3.11.0 1.17.1 app```
 
 
-### Tested versions  
+## Tested versions  
 **Docker version** = 19.03.13  
 **docker-compose version** = 1.17.1  
 
