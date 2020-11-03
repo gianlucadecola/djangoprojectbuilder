@@ -5,11 +5,10 @@ You can clone it, run the build and start building your django app.
 
 ## Project Structure  
 
-```src``` folder contains all the application (project root dir with ```manage.py``` file.  
-```src/server``` folder contains the django project with ```settings.py```.  
-
-A default db.qlite3 is created with its basic migrations.  
-Django admin need to be created manually.  
+* ```src``` folder contains all the application (project root dir with ```manage.py``` file.  
+* ```src/server``` folder contains the django project with ```settings.py```.  
+* A default db.qlite3 is created with its basic migrations.  
+* Django admin need to be created manually.  
 
 **API documentation** can be found at the url: ```host:8000/swagger```
 
