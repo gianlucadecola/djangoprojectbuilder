@@ -32,3 +32,6 @@ RUN sed -i "/openapi.Info(/ a \ \ \ \ title='API'," server/urls.py
 RUN sed -i "/title='API',/ a \ \ \ \ default_version='v1'))" server/urls.py
 
 RUN echo "urlpatterns += [path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='api_docs')]" >> server/urls.py
+
+RUN printf "INSTALLED_APPS += ['${appname}',\n\
+    'drf_yasg',]" >> server/settings.py
