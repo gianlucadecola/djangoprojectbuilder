@@ -26,7 +26,6 @@ This repository contains an up and running clean django/django rest framework en
 ## Tested versions  
 **Docker version** = 19.03.13  
 **docker-compose version** = 1.17.1  
-
 **Python packages**  
 django==3.0.6  
 djangorestframework==3.11.0  
